@@ -19,6 +19,12 @@
     - [Other Comps](#other-comps)
   - [Comps VS DCF](#comps-vs-dcf)
 
+## Notebooks <!-- omit in toc -->
+
+All calculation detail will be in the notebooks
+
+- [Notebook1](week1.ipynb)
+
 ## week1 Time and Money
 
 `Current Value better than Future Value`
