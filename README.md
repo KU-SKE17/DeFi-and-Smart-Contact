@@ -18,6 +18,13 @@
     - [Assumptions for Comps](#assumptions-for-comps)
     - [Other Comps](#other-comps)
   - [Comps VS DCF](#comps-vs-dcf)
+- [week2 Capital Budgeting](#week2-capital-budgeting)
+  - [Net Present Value (NPV)](#net-present-value-npv)
+    - [Main Drivers of NPV](#main-drivers-of-npv)
+  - [Payback Period](#payback-period)
+  - [Accounting Ratio](#accounting-ratio)
+    - [Return on invested capital (ROIC)](#return-on-invested-capital-roic)
+    - [Internal Rate of Return (IRR)](#internal-rate-of-return-irr)
 
 ## Notebooks <!-- omit in toc -->
 
@@ -148,3 +155,98 @@ Asset Price = (Price/Attribute) * Attribute
 - DCF is more appealing in theory and more accurate, but requires much more work
 - Comps can be a good quick-and-dirty valuation, but be
   careful!
+
+## week2 Capital Budgeting
+
+`Foundation`: cost vs benefit analysis
+
+Best Practices
+
+- Arms-length
+- Objective
+- Transparent
+
+Decisions Obtained
+
+- Accept or reject
+- Best of all the candidate projects
+- Ranking of different projects
+
+### Net Present Value (NPV)
+
+- Best capital budgeting tool & Best Practices
+- Add up the PV of all future cash
+- Compare with initial investment
+
+`Decision rule`: Invest if NPV > 0
+
+    NPV = i + 𝝨t (cash_flow_of(t)/(1+r)^t)
+
+- i = initial_investment
+- t = 1 to end of project
+- r = discount rate
+
+#### Main Drivers of NPV
+
+- Cash flow (the more the better)
+- Timing (the sooner the better)
+- Discount rate (the lower the better)
+
+### Payback Period
+
+- How long it takes to earn back initial investment
+
+`Decision rule`: invest if payback less than a specified time (e.g., 1 year, 10 years, etc)
+
+Pros:
+
+- Time is money - reflecting the opportunity cost
+
+Cons:
+
+- Neglects cash after the payback
+- Neglects timing for future cash flow
+- Neglects risk - no discount rate consideration
+- Arbitrary cut off - Non objective, not arms-length
+
+### Accounting Ratio
+
+- Measure the ratio of A/B
+
+`Decision rule`: invest if the ratio > (some threshold)
+
+Pros:
+
+- More money is better
+- Reflects the use of capital
+
+Cons:
+
+- Neglects timing
+- Includes accounting distortions (e.g., depreciation or some non-cash expenses)
+- Neglects risk
+- Arbitrary cut off
+
+#### Return on invested capital (ROIC)
+
+    ROIC = NOPAT/IC
+
+- NOPAT = Net Profit after Tax
+- IC = invested capital
+
+#### Internal Rate of Return (IRR)
+
+- What discount rate makes NPV = 0?
+  - Discounting more drives NPV down
+- How hard can NPV get hit and stay > 0
+- This decision rule is similar to NPV
+  - Scales NPV into a %
+  - More intuitive
+- Accounts for timing, opportunity cost, and risk
+
+`Decision rule`: invest if that IRR rate > current discount rate
+
+    NPV = (𝝨t (cash_flow_of(t)/(1+IRR)^t)) - i = 0
+
+- i = initial_investment
+- t = 1 to end of project
