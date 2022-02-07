@@ -30,7 +30,7 @@
 
 All calculation detail will be in the notebooks
 
-- [Notebook1](week1.ipynb)
+- [Notebook](notebook.ipynb)
 
 ## week1 Time and Money
 
